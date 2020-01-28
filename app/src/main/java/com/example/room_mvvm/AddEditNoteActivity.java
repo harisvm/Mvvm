@@ -28,6 +28,8 @@ public class AddEditNoteActivity extends AppCompatActivity {
 
 		title = findViewById(R.id.edt_title);
 		des = findViewById(R.id.edt_description);
+		numberPicker = findViewById(R.id.numberPicker);
+
 		getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
 
 		Intent intent = getIntent();
@@ -42,8 +44,6 @@ public class AddEditNoteActivity extends AppCompatActivity {
 			getSupportActionBar().setTitle("Add Note");
 
 		}
-		getSupportActionBar().setTitle("Add Note");
-		numberPicker = findViewById(R.id.numberPicker);
 		numberPicker.setMinValue(1);
 		numberPicker.setMaxValue(10);
 
